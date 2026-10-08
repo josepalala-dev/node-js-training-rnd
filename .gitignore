@@ -1,12 +1,6 @@
-.DS_Store
-.claude/
-.vscode/
-
-graphify-out/
-
 node_modules/
+.env
+*.db
+src/generated/
 dist/
 coverage/
-*.db
-.env
-.env.test
