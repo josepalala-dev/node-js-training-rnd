@@ -1,0 +1,38 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Research the relational model: tables, rows, primary and foreign keys,research
+3,Research SQLite specifics: single-file database, dynamic typing and type affinity, PRAGMA foreign_keys,research
+4,Research DDL: CREATE / ALTER / DROP, constraints,research
+5,Research DML: INSERT, SELECT, UPDATE, DELETE, filtering, sorting, LIMIT/OFFSET, keyset pagination,research
+6,Research aggregates with GROUP BY / HAVING, INNER and LEFT joins, subqueries,research
+7,Research relationships: 1:1, 1:N, M:N with a junction table, normalisation basics,research
+8,Research indexes and EXPLAIN QUERY PLAN, transactions and ACID,research
+9,Research SQL injection and parameterised queries,research
+10,Research documenting an ERD with Mermaid,research
+11,Design the schema including the task_tags junction table,build
+12,Write the DDL,build
+13,Seed the database with SQL,build
+14,Write and run 20+ of your own graded query exercises,build
+15,Cover filtering, sorting and pagination in your exercises,build
+16,Cover INNER/LEFT joins in your exercises,build
+17,Cover aggregates with GROUP BY/HAVING in your exercises,build
+18,Cover at least one subquery in your exercises,build
+19,Write at least one query inside an explicit transaction,build
+20,Demonstrate a SQL-injection attack against a vulnerable string-concatenated query,build
+21,Fix the SQL-injection vulnerability with parameters,build
+22,Draw the ERD in Mermaid matching the schema you actually built,build
+23,At least 20 of your own graded query exercises written and run,verify
+24,You can explain primary vs foreign keys, what an index is for, and how to model 1:N vs M:N,verify
+25,The SQL-injection demo actually succeeds against the vulnerable query,verify
+26,The parameterised fix actually blocks it,verify
+27,A Mermaid ERD exists in your README and matches the schema you actually built,verify
+28,Capture the schema and seed SQL in your write-up,write-up
+29,Capture your 20+ exercises in your write-up,write-up
+30,Capture the Mermaid ERD in your write-up,write-up
+31,Capture the before/after of the injection demo in your write-up,write-up
+32,Write why it's built this way (key decisions) in your write-up,write-up
+33,Write how to build it (teach it to the next trainee) in your write-up,write-up
+34,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+35,Write what tripped you up in your write-up,write-up
+36,Show checkpoint evidence in your write-up,write-up
+37,Close out what you'd do differently in your write-up,write-up

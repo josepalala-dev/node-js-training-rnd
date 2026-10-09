@@ -1,0 +1,38 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Research what an ORM is, its trade-offs, and when to drop to raw SQL,research
+3,Research Prisma 7 + SQLite setup: installing prisma@7 and @prisma/client@7, the better-sqlite3 driver adapter,research
+4,Research prisma init, the datasource URL in the Prisma config file,research
+5,Research PrismaClient requires a driver adapter, the generated client is git-ignored,research
+6,Research the schema language: models, scalar types, @id, @default, @unique, @@index, @updatedAt, relations, onDelete,research
+7,Research migrations: migrate dev --name, --create-only, migrate status, migrate deploy, migrate reset, db push,research
+8,Research the Prisma Client: singleton client, create, createMany, findUnique, findFirst, findMany, update, upsert, delete,research
+9,Research where with AND/OR/NOT/contains/in/gte, orderBy, pagination with skip/take, select vs include, nested writes, count and groupBy,research
+10,Research $transaction (batch and interactive), $queryRaw with tagged templates, query logging,research
+11,Research PrismaClientKnownRequestError codes P2002, P2025, P2003,research
+12,Research generated model types, Prisma.TaskCreateInput, Prisma.TaskWhereInput, Prisma.TaskGetPayload, satisfies Prisma.TaskSelect,research
+13,Research seeding with an explicit npm run db:seed, inspecting data with Prisma Studio,research
+14,Research what changes with PostgreSQL, how MongoDB's document model differs, what Prisma 8 changes (concept only),research
+15,Set up Prisma 7 with the SQLite driver adapter,build
+16,Translate the M06 schema into Prisma,build
+17,Create your initial migration,build
+18,Create a second migration adding a column such as dueDate or priority,build
+19,Hand-edit one migration via --create-only,build
+20,Build the service layer on Prisma replacing the in-memory store from v1,build
+21,Implement the list endpoint's status/q filters, sorting, and page/pageSize pagination,build
+22,Return { data, meta } from the list endpoint,build
+23,Write the seed script,build
+24,Map Prisma's error codes into the existing M05 error handler,build
+25,migrate reset plus the seed script rebuilds the database from scratch every time,verify
+26,The Bruno collection from M05 is still green against v2,verify
+27,You can explain migrate dev vs migrate deploy in your own words,verify
+28,P2002, P2025, and P2003 each map to the right status code through your existing error handler,verify
+29,package.json locks prisma and @prisma/client to ^7,verify
+30,Every one-off command uses npx prisma@7,verify
+31,Capture migrate reset plus the seed rebuilding the database in your write-up,write-up
+32,Write why it's built this way (key decisions) in your write-up,write-up
+33,Write how to build it (teach it to the next trainee) in your write-up,write-up
+34,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+35,Write what tripped you up in your write-up,write-up
+36,Show checkpoint evidence in your write-up,write-up
+37,Close out what you'd do differently in your write-up,write-up

@@ -1,0 +1,39 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Get the synthetic log file from your trainer,setup
+3,Research what Node is: V8 + libuv + core APIs,research
+4,Research single-threaded event loop and thread pool,research
+5,Research blocking vs non-blocking,research
+6,Research ESM vs CommonJS, type: module, import.meta.dirname/filename, node: prefix,research
+7,Research node:fs/promises, node:path, node:os, node:events,research
+8,Research node:stream (why streams exist),research
+9,Research node:http (a bare server),research
+10,Research node:crypto (randomUUID),research
+11,Research node:timers/promises,research
+12,Research node:util (parseArgs, promisify),research
+13,Research process: argv, env, exit codes, signals,research
+14,Research config and developer ergonomics: env vars, .env, node --env-file, node --watch, node --run,research
+15,Research globals: fetch, URL, AbortController, structuredClone,research
+16,Research npm: package.json anatomy, semver ranges, lockfile, install vs ci, update, outdated, scripts, npx,research
+17,Research dependencies vs devDependencies, engines, npm audit,research
+18,Research supply-chain hygiene: vet packages, review lockfile diffs, lifecycle scripts,research
+19,Research debugging: console methods, node --inspect with VS Code debugger, reading stack traces,research
+20,Research node:test runner and node:sqlite (awareness only),research
+21,Build the log-report CLI: stream the file,build
+22,Aggregate counts in the CLI,build
+23,Accept options via parseArgs in the CLI,build
+24,Write a JSON report from the CLI,build
+25,Build the bare node:http server with three JSON endpoints,build
+26,Hand-roll routing in the server,build
+27,Hand-roll body parsing in the server,build
+28,Merge both programs to main by PR,build
+29,Both programs merged to main through a pull request,verify
+30,The CLI genuinely streams the file rather than loading it fully into memory first,verify
+31,You can explain what a framework like Express would remove pain from,verify
+32,Capture both merged PRs in your write-up,write-up
+33,Write why it's built this way (key decisions) in your write-up,write-up
+34,Write how to build it (teach it to the next trainee) in your write-up,write-up
+35,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+36,Write what tripped you up in your write-up,write-up
+37,Show checkpoint evidence in your write-up,write-up
+38,Close out what you'd do differently in your write-up,write-up

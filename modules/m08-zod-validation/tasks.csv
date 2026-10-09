@@ -1,0 +1,34 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Research why runtime validation: TypeScript types vanish at runtime, req.body is untrusted data,research
+3,Research Zod 4 basics: import { z } from "zod", primitives, top-level string formats,research
+4,Research z.object and z.strictObject, arrays, enums and literals, unions and discriminated unions,research
+5,Research optional, nullable, default, z.coerce.number() for query strings and params,research
+6,Research parse vs safeParse, error formatting with z.flattenError, z.treeifyError, z.prettifyError,research
+7,Research custom messages via the unified error parameter,research
+8,Research refinements and transforms: .refine, cross-field rules, .transform, pipes, trimming,research
+9,Research type inference: z.infer, z.input, z.output,research
+10,Research deriving create/update/query schemas with .pick, .omit, .partial, .extend,research
+11,Research Zod + Express: a typed validate({ body, params, query }) middleware,research
+12,Research storing parsed values on res.locals or a typed req.valid,research
+13,Research Zod + Prisma: Zod is the request contract, Prisma types are the persistence contract,research
+14,Research validating process.env once at startup in config.ts and fail fast,research
+15,Research Zod Mini and JSON Schema export (awareness only),research
+16,Write Zod schemas for create, update, list query, and params,build
+17,Build the typed validate middleware,build
+18,Work around req.query being read-only in Express 5,build
+19,Remove every hand-written validation check as you wire Zod in,build
+20,Map ZodError output into the fixed M05 envelope's details array,build
+21,Add env validation in config.ts that fails fast on startup,build
+22,v3 merged by pull request,verify
+23,No manual if (!body.title)-style checks remain anywhere in the codebase,verify
+24,Invalid input never reaches Prisma,verify
+25,400 responses carry field-level details in the exact envelope shape fixed in M05,verify
+26,tsc --noEmit proving handler types come from z.infer,verify
+27,Capture v3 merged by PR in your write-up,write-up
+28,Write why it's built this way (key decisions) in your write-up,write-up
+29,Write how to build it (teach it to the next trainee) in your write-up,write-up
+30,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+31,Write what tripped you up in your write-up,write-up
+32,Show checkpoint evidence in your write-up,write-up
+33,Close out what you'd do differently in your write-up,write-up

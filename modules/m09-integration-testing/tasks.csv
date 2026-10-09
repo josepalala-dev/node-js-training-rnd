@@ -1,0 +1,42 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Research testing strategy: the pyramid, unit vs integration vs end-to-end, what to test in an API,research
+3,Research why integration tests here use a real database rather than mocks,research
+4,Research Jest 30 basics: describe/it/expect imported from @jest/globals, matchers, async tests,research
+5,Research beforeAll/afterAll/beforeEach, test.each, toMatchObject and expect.objectContaining,research
+6,Research rejects/toThrow, snapshots used sparingly, Arrange-Act-Assert,research
+7,Research @swc/jest transform, ESM mode, type safety separately with tsc --noEmit,research
+8,Research running Jest in ESM mode with node --experimental-vm-modules,research
+9,Research Supertest: request(app) against the exported app, .get/.post/.patch/.delete, .send, .set, .query,research
+10,Research status, header, and body assertions, async/await style, agents for cookies,research
+11,Research test database strategy: separate test.db via .env.test, globalSetup, clean tables in beforeEach,research
+12,Research --runInBand because SQLite allows a single writer,research
+13,Research factories and seed helpers, afterAll(() => prisma.$disconnect()),research
+14,Research what to cover: happy paths, validation failures, 404, 409, malformed JSON, pagination, filter, sort, middleware behaviour,research
+15,Research coverage (--coverage, thresholds), flaky tests, mocking only at boundaries,research
+16,Research jest.mock hoisting doesn't apply in ESM (jest.unstable_mockModule),research
+17,Research TDD mini-cycle: red, green, refactor while adding PATCH /tasks/:id/complete,research
+18,Research CI: a GitHub Actions workflow running npm ci, prisma generate, typecheck, test,research
+19,Set up Jest, Supertest, and the test database strategy,build
+20,Write tests for the happy paths,build
+21,Write tests for validation failures (400 with details),build
+22,Write tests for 404s,build
+23,Write tests for 409s,build
+24,Write tests for malformed JSON,build
+25,Write tests for pagination/filter/sort behavior,build
+26,Write tests for middleware behavior (request-ID header, 404 handler),build
+27,Add PATCH /tasks/:id/complete test-first (red, green, refactor),build
+28,Set up the GitHub Actions workflow and confirm green CI,build
+29,Green CI on a pull request,verify
+30,80% or more coverage on routes and services,verify
+31,The suite passes in random order (--randomize),verify
+32,PATCH /tasks/:id/complete was added test-first (red, green, refactor),verify
+33,Capture 25+ passing tests in your write-up,write-up
+34,Capture 80%+ coverage on routes and services in your write-up,write-up
+35,Capture the suite passing with --randomize in your write-up,write-up
+36,Write why it's built this way (key decisions) in your write-up,write-up
+37,Write how to build it (teach it to the next trainee) in your write-up,write-up
+38,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+39,Write what tripped you up in your write-up,write-up
+40,Show checkpoint evidence in your write-up,write-up
+41,Close out what you'd do differently in your write-up,write-up

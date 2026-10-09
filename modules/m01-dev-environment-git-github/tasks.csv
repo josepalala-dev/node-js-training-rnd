@@ -1,0 +1,44 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Get your merge-conflict pairing partner assignment from your trainer,setup
+3,Install VS Code,setup
+4,Install Git,setup
+5,Install a Node version manager (nvm, fnm, nvm-windows, or Volta),setup
+6,Install Node 24 using the version manager,setup
+7,Create a .nvmrc pinning Node 24,setup
+8,Install Bruno,setup
+9,Confirm terminal basics (cd, ls, pwd),setup
+10,Create a public GitHub repo for this stage,setup
+11,Connect your local remote to the GitHub repo,setup
+12,Practice git init and git clone,build
+13,Practice git status,build
+14,Practice git add,build
+15,Practice git commit,build
+16,Practice git log,build
+17,Practice git diff,build
+18,Practice git restore,build
+19,Practice git stash,build
+20,Look up the difference between git revert and git reset,build
+21,Add a .gitignore covering node_modules, .env, *.db, src/generated/, dist/, coverage/,build
+22,Add a .env.example instead of ever committing a real .env,build
+23,Write the hello-node script on a feature branch (not directly to main),build
+24,Commit with Conventional Commits as you go,build
+25,Open a pull request for that branch,build
+26,Look up GitHub Flow and how review comments work,build
+27,Get a peer review from your assigned partner on the PR before merging,build
+28,With your pair, look up merge vs rebase conceptually,build
+29,Deliberately create a merge conflict (two branches editing the same line),build
+30,Resolve the merge conflict together,build
+31,Merge the reviewed PR once it carries 3 or more Conventional Commits,verify
+32,The PR is merged with 3+ Conventional Commits,verify
+33,.gitignore is present and covers the full Node-project list,verify
+34,.env.example is present,verify
+35,You can narrate git revert vs git reset out loud unaided,verify
+36,Final self-review: every Definition of done checkbox in brief.md is satisfied,verify
+37,Capture the repo, the script, and the PR/merge flow in your write-up,write-up
+38,Write why it's built this way (key decisions) in your write-up,write-up
+39,Write how to build it (teach it to the next trainee) in your write-up,write-up
+40,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+41,Write what tripped you up in your write-up,write-up
+42,Show checkpoint evidence in your write-up,write-up
+43,Close out what you'd do differently in your write-up,write-up

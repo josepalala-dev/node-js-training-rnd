@@ -1,0 +1,41 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Research HTTP and REST: methods, status codes, headers, JSON, idempotency, resource naming,research
+3,Research /api/v1 versioning, pagination conventions,research
+4,Research @types/express, app.ts that builds and exports the app, server.ts that calls listen,research
+5,Research express.json(), typing handlers with Request<Params, ResBody, ReqBody, Query>,research
+6,Research app.get/post/put/patch/delete, express.Router(), route params and query strings,research
+7,Research route modules, separating handlers from routes, res.status().json(), res.sendStatus,research
+8,Research Express 5 changes: rejected promises forwarded to error handler, new path syntax,research
+9,Research req.body is undefined when no body parser ran, req.query is read-only, removed deprecated signatures,research
+10,Research the request pipeline, why order matters, next() vs next(err),research
+11,Research app-, router-, and route-level middleware,research
+12,Research built-ins: express.json, express.urlencoded, express.static,research
+13,Research third-party: cors, helmet, morgan or pino-http,research
+14,Research custom middleware: request ID, timing, a simple API-key auth, a 404 handler,research
+15,Research operational vs programmer errors, the 4-argument error middleware,research
+16,Research custom AppError classes, one central handler, single consistent JSON error shape,research
+17,Research config from environment variables, graceful shutdown, a health endpoint, CORS basics,research
+18,Research Bruno: collections, environments, assertions,research
+19,Write app.ts (exports the app, no listen),build
+20,Write server.ts (listens, shuts down gracefully),build
+21,Build your AppError hierarchy,build
+22,Build the central error handler producing the fixed envelope,build
+23,Build the request-ID middleware,build
+24,Build the logging middleware,build
+25,Build the in-memory store,build
+26,Build the five /api/v1/tasks endpoints with hand-written validation,build
+27,Add a 404 handler,build
+28,Add a health endpoint,build
+29,Build the Bruno collection with assertions for every endpoint and error path,build
+30,v1 merged by pull request,verify
+31,Every error path returns the exact envelope shape,verify
+32,The Bruno collection passes,verify
+33,You can explain why Express 5 no longer needs a try/catch wrapper around async handlers,verify
+34,Capture v1 merged by PR in your write-up,write-up
+35,Write why it's built this way (key decisions) in your write-up,write-up
+36,Write how to build it (teach it to the next trainee) in your write-up,write-up
+37,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+38,Write what tripped you up in your write-up,write-up
+39,Show checkpoint evidence in your write-up,write-up
+40,Close out what you'd do differently in your write-up,write-up

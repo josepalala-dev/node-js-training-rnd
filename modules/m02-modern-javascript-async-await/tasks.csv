@@ -1,0 +1,45 @@
+step,task,category
+1,Read brief.md fully before starting anything,setup
+2,Research const/let, scope, closures, arrow functions and this,research
+3,Research destructuring, spread/rest, default parameters, optional chaining, nullish coalescing,research
+4,Research array methods: map, filter, reduce, find, some, every, flatMap,research
+5,Research non-mutating helpers: toSorted, toReversed, with, structuredClone,research
+6,Research Map and Set (including newer Set methods),research
+7,Research classes with #private fields, getters/setters,research
+8,Research errors: try/catch/finally, custom error classes, Error cause,research
+9,Research ES modules: named vs default exports,research
+10,Research call stack, event loop, task queue vs microtask queue,research
+11,Research callbacks and callback hell,research
+12,Research Promises: then/catch/finally, chaining,research
+13,Research async/await,research
+14,Research error handling in async code,research
+15,Research sequential vs parallel execution: Promise.all, allSettled, race, any,research
+16,Research Promise.withResolvers, Promise.try, async iteration,research
+17,Research timeouts and cancellation: AbortController, AbortSignal.timeout,research
+18,Research fetch and JSON,research
+19,Research pitfalls: forgotten await, await in loops, forEach(async), unhandled rejections,research
+20,Research Temporal as the future replacement for Date (awareness only),research
+21,Build sleep utility,build
+22,Build retry utility with retries and delayMs options,build
+23,Build withTimeout utility,build
+24,Build mapLimit utility,build
+25,Add node:assert self-checks for sleep,build
+26,Add node:assert self-checks for retry,build
+27,Add node:assert self-checks for withTimeout,build
+28,Add node:assert self-checks for mapLimit,build
+29,Fetch from JSONPlaceholder sequentially and record timing,build
+30,Fetch from JSONPlaceholder in parallel and record timing,build
+31,Compare timings and explain why parallel is faster,build
+32,Refactor a piece of callback-style node:fs code to promises/async-await,build
+33,Be ready to predict and explain the output order of a mixed setTimeout/promise/await snippet,verify
+34,All node:assert self-checks pass,verify
+35,You can predict and explain the output order of a mixed snippet out loud,verify
+36,The timing comparison actually shows parallel beating sequential,verify
+37,Capture the toolkit module with all self-checks passing in your write-up,write-up
+38,Capture the timing comparison's actual numbers in your write-up,write-up
+39,Write why it's built this way (key decisions) in your write-up,write-up
+40,Write how to build it (teach it to the next trainee) in your write-up,write-up
+41,Pick 1-2 concepts and explain each in your own words in your write-up,write-up
+42,Write what tripped you up in your write-up,write-up
+43,Show checkpoint evidence in your write-up,write-up
+44,Close out what you'd do differently in your write-up,write-up
